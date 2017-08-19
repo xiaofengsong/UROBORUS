@@ -1219,10 +1219,7 @@ sub accepted_reads_processing
                                                                                                         @transcriptid = split(/"/,$exon_info1[5]);
                                                                                                 }
                                                                                                 my $len = $exon_info2[1] - $exon_info1[0] + 1;
-                                                                                                my $strand = "+";
-                                                                                                if ($array1[1] == 83){
-                                                                                                        $strand = "-";
-                                                                                                }
+                                                                                                my $strand = $exon_info1[2];
                                                                                                 print IDNEW $array1[2],"\t",$exon_info1[0]-1,"\t",$exon_info2[1],"\t",$strand,"\t",$geneid[1],"\t",$len,"\t","1\t",$transcriptid[1],"\n";
                                                                                         }
                                                                                 }
@@ -1242,10 +1239,7 @@ sub accepted_reads_processing
                                                                                                                         @transcriptid = split(/"/,$exon_info1[5]);
                                                                                                                 }
                                                                                                                 my $len = $exon_info2[1] - $exon_info1[0] + 1;
-                                                                                                                my $strand = "+";
-                                                                                                                if ($array1[1] == 83){
-                                                                                                                        $strand = "-";
-                                                                                                                }
+                                                                                                                my $strand = $exon_info1[2];                                                                                                                                                                                                         $strand = "-";
                                                                                                                 my $left_edge = $exon_info1[0] -1;
                                                                                                                 $exonpos{$geneid[1]} = "$left_edge\t$exon_info2[1]\t$strand\t";
                                                                                                                 $exoninfo{$geneid[1]} = "$len\t$transcriptid[1]\n";

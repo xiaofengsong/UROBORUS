@@ -84,7 +84,7 @@ USAGE
 	$when = localtime();
 	print STDERR "[",$when,"]";
 	print STDERR " Now tophat..........";
-	system("tophat --bowtie1 -p $opt_p -o seed_mapped_out --no-coverage-search $opt_index R20_1.fastq R20_2.fastq");
+	system("tophat --bowtie1 -p 6 -o seed_mapped_out --no-coverage-search $opt_index R20_1.fastq R20_2.fastq");
 	print STDERR "finished!","\n";
 
 	my $pwd_str1 = `pwd`;

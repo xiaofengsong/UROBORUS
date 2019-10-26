@@ -13,13 +13,13 @@ use threads;
 my $USAGE =<<USAGE;
 	UROBORUS.pl 2.1.1         (Oct. 1, 2019)
 	usage:
-	UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path/ unmapped.sam accepted_hits.bam
-	-index:	genome index(use bowtie index);
-	-gtf:	gene anotation file(*.gtf file);
-	-fasta:	path for genome sequence in fasta file (*.fa) in separate chromosome;
-	-p:	threads (Integer,default = 6);
-	-temp:	keeping the temperary file;
-	-help:	usage help;
+		UROBORUS.pl -index /path/genome -gtf /path/genes.gtf -fasta /path/ unmapped.sam accepted_hits.bam
+		-index:	genome index(use bowtie index);
+		-gtf:	gene anotation file(*.gtf file);
+		-fasta:	path for genome sequence in fasta file (*.fa) in separate chromosome;
+		-p:	threads (Integer,default = 6);
+		-temp:	keeping the temperary file;
+		-help:	usage help;
 USAGE
 #contact: xfsong@nuaa.edu.cn
 ####################################################################################

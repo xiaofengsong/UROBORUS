@@ -10,7 +10,7 @@ google_analytics: ['UA-48623707-1', 'www.openbioinformatics.org/uroborus']
 
 docs_dir: docs
 
-pages:
+env:
 - Home: index.md
 - Download: download.md
 
